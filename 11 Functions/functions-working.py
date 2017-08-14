@@ -4,7 +4,7 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    testfunc()
+    testfunc() # Noop
     testNum(42, 34, 75) #43, 34, 75 output
     testNumOptional(42) # 42, 112, 66
     testNumOptional(42,45) #42, 45, 66

@@ -8,7 +8,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 lines = os.path.join(dir_path, "lines.txzt")
 
 def main():
-    # fh = open(lines)
+    # try except readfile
     try:
         for line in readfile(lines): print(line.strip())
     except IOError as e:
@@ -17,6 +17,7 @@ def main():
         print('bad filename', e)
 
 def readfile(filename):
+    #if else .txt
     if filename.endswith('.txt'):
         fh = open(filename)
         return fh.readlines()

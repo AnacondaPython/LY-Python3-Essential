@@ -7,8 +7,8 @@ def main():
     testfunc(1,2,3,42,43,45,56)
 
 def testfunc(ed, edd, eddy, *args):
-    print(ed, edd, eddy, args)  #1 2 3 (42, 43, 45, 56) tuple
-    print(ed, edd, eddy, *args) # 1 2 3 42 43 45 56  (value at address)
-    for n in args:print (n, end=' ')
+    print(ed, edd, eddy, args)  #1 2 3 (42, 43, 45, 56) >>tuple
+    print(ed, edd, eddy, *args) # 1 2 3 42 43 45 56 >> (value at address)
+    for n in args:print (n, end=' ') # 42 43 45 56 >>print args only
 
 if __name__ == "__main__": main()

@@ -20,6 +20,6 @@ def main():
     try:
         fh = open(lines)
         for line in fh: print(line.strip())
-    except IOError as e: #specifying "IOerror as e" not needed can use a catchall
+    except IOError as e: 
         print('could not open the file. come back tomorrow',e)
 if __name__ == "__main__": main()
